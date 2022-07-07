@@ -1,6 +1,6 @@
 const ListItem = (props) => {
     return (
-        <li className={props.className}>{props.children}</li>
+        <li key={props.key} className={props.className}>{props.children}</li>
     );
 }
 
