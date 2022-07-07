@@ -1,0 +1,51 @@
+.container {
+    width: 100%;
+    height: 96vh;
+    text-align: center;
+    background-color: rgb(193, 134, 57);
+    position: relative;
+}
+
+.card {
+    position: absolute;
+    bottom: 400px;
+    left: 620px;
+}
+
+.text {
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 50px;
+
+}
+
+
+.button {
+    padding: 20px 40px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .1s linear;
+}
+
+.button:hover {
+    color: #fff;
+    background-color: #555;
+}
+
+
+.list {
+    position: absolute;
+    bottom: 50px;
+    left: 510px;
+    list-style-type: none;
+}
+
+.image {
+    border: 5px solid #555;
+}
+
+
+.listItem {
+    font-size: 24px;
+}

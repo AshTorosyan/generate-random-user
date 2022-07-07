@@ -6,6 +6,8 @@ import Card from "./UserInterface/Card/Card";
 import Text from "./Components/Text/Text";
 import List from "./Components/List/List";
 import ListItem from "./Components/ListItem/ListItem";
+import Center from "./Components/Center/Center";
+import classes from "./UserInterface/Global.module.css";
 function App() {
 
 
@@ -30,28 +32,31 @@ fetch("https://randomuser.me/api/")
 
   return (
     <Wrapper>
-    <Card>
-    <Text>Find User</Text>
-    
-   <Button onClick={randomUser}>click me</Button>
+      <Center className={classes.container}>
+        
+    <Card className={classes.card}>
+    <Text className={classes.text}>Find User</Text>
+    <br></br>
+   <Button className={classes.button} onClick={randomUser}>click me</Button>
     </Card>  
-    <List>
+    <List className={classes.list}>
       {
-        user.gender && <ListItem>
-          <Text>gender: {user.gender}</Text>
+        user.gender && <ListItem className={classes.listItem}>
+          <Text className={classes.text_gender}>gender: {user.gender}</Text>
           <br></br>
-          <Text> cell: {user.cell} </Text>
+          <Text className={classes.text_cell}> cell: {user.cell} </Text>
           <br></br>
-          <Text> email: {user.email} </Text>
+          <Text className={classes.text_email}> email: {user.email} </Text>
           <br></br>
-          <Text> name: {user.name} </Text>
+          <Text className={classes.text_name}> name: {user.name} </Text>
           <br></br>
-          <Image src={user.picture}/>
+          <Image width="200px" height="200px" className={classes.image} src={user.picture}/>
           <br></br> 
         </ListItem>
       }
     </List>
    
+    </Center>
     </Wrapper>
   );
 }
