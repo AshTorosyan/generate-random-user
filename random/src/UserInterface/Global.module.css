@@ -6,10 +6,11 @@
     position: relative;
 }
 
+
 .card {
     position: absolute;
     bottom: 400px;
-    left: 620px;
+    left: 320px;
 }
 
 .text {
@@ -26,23 +27,27 @@
     cursor: pointer;
     text-transform: uppercase;
     transition: .1s linear;
+    font-size: 1.5rem;
+    border-radius: 20px;
 }
 
 .button:hover {
     color: #fff;
-    background-color: #555;
+    background-color: tan;
+}
+
+.button:active {
+    box-shadow: 2px 3px 2px rgb(232, 230, 228);
 }
 
 
 .list {
     position: absolute;
-    bottom: 50px;
-    left: 510px;
+    bottom: 250px;
+    left: 650px;
     list-style-type: none;
-}
-
-.image {
-    border: 5px solid #555;
+    color: #fff;
+    
 }
 
 
